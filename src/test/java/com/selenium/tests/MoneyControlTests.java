@@ -5,14 +5,12 @@ import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.*;
 import java.util.stream.IntStream;
-
 import static com.selenium.driver.DriverManager.browser;
 import static com.selenium.utils.ReadPropertyFile.propertyOf;
+import static org.testng.Assert.*;
 
 public final class MoneyControlTests extends BaseTest {
 
@@ -99,7 +97,7 @@ public final class MoneyControlTests extends BaseTest {
 
         WebElement stockName = browser().findElement(By.xpath("//*[@id=\"stockName\"]/h1"));
         String actualStockName = stockName.getText();
-        Assert.assertEquals(actualStockName,"Aurobindo Pharma Ltd.");
+        assertEquals(actualStockName,"Aurobindo Pharma Ltd.");
 
     }
 }
