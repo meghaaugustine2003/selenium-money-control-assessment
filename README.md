@@ -5,12 +5,17 @@
 4. Open the portfolio of the mutual fund , find the stock  which has second highest allocation percentage.
 
 # How to run
-1. mvn compile
-2. mvn clean test
+Run the following command to start the test.
+```
+mvn test
+```
+
 
 # Reports and Screenshots
-1. Reports : target/reports
-2. Screenshots : target/screenshots
+Once the test is completed,
+1. Navigate to the target folder `target\reports` and open `test_report.html`.
+2. Also the screenshots for each step can be viewed inside `targets\screenshots`.
+
 
 # Verification
-[Watch the video]- https://youtu.be/AHSkBQIyn6Q
+[Watch the video]- https://youtu.be/wG8_EToyupU
